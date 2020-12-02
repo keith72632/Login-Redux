@@ -2,11 +2,11 @@ const mongoose = require('mongoose')
 
 const connectDB = async() => {
     try {
-        const connect = await mongoose.connect('mongodb+srv://thinmint:tigers10@clusterk.98gsi.mongodb.net/Login_Redux?retryWrites=true&w=majority', {
+        const connect = await mongoose.connect(process.env.MONGO_URI, {
             useUnifiedTopology: true,
             useNewUrlParser: true,
         })
-        console.log('Connected to Mongodb')
+        console.log('Connected to Mongodb'.green.underline)
     } catch(error) {
         console.log(error.message)
     }
