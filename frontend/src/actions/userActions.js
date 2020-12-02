@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export const login = () => async(dispatch) => {
+export const login = (email, password) => async(dispatch) => {
     try{
         dispatch({ type: 'USER_LOGIN_REQUEST' })
 
