@@ -35,6 +35,6 @@ app.use((err, req, res, next) => {
     })
 })
 
-const PORT = process.env.PORT || 3222
+const PORT = process.env.PORT
 
 app.listen(PORT, () => console.log(`Listen on port ${PORT}`.cyan.underline))

@@ -1,3 +1,5 @@
+This is just a basic login/register screen made with react-redux that anyone can use. The only enviornment variables I used is the PORT in server.js, MONGO_URI is db.js, and JWT_SECRET in a generateToken.js. Run npm install in both the root and frontend directory, then use npm run dev to run both development server and server
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
